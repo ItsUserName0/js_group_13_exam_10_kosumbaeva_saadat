@@ -1,0 +1,15 @@
+<h1>{{ news.title }}</h1>
+<p class="text-muted">{{ news.date }}</p>
+<p>{{ news.description }}</p>
+
+<h1>Comments</h1>
+<ng-container *ngIf="comments.length > 0; else emptyComments">
+  <mat-card *ngFor="let c of comments">
+    <mat-card-content fxLayout="row" fxLayoutAlign="space-between">
+      <p><strong>{{ c.author }}</strong> wrote: <span>{{ c.description }}</span></p>
+      <button mat-raised-button (click)="onCommentRemove(c.id)">Delete</button>
+    </mat-card-content>
+  </mat-card>
+</ng-container>
+<ng-template #emptyComments>There are no comments on this news</ng-template>
+

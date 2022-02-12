@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b19cd196-261b-467f-9f78-c2793ebbaeb1" name="Changes" comment="Created CRUD for &quot;news&quot;.">
-      <change afterPath="$PROJECT_DIR$/api/app/comments.js" afterDir="false" />
+    <list default="true" id="b19cd196-261b-467f-9f78-c2793ebbaeb1" name="Changes" comment="Created CRUD for &quot;comments&quot;.">
+      <change afterPath="$PROJECT_DIR$/api/db.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +25,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shop-js13/api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../messenger-general/api" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/front/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -40,7 +41,7 @@
       <workItem from="1644643615542" duration="125000" />
       <workItem from="1644643751322" duration="69000" />
       <workItem from="1644643835389" duration="89000" />
-      <workItem from="1644643929004" duration="6299000" />
+      <workItem from="1644643929004" duration="10820000" />
     </task>
     <task id="LOCAL-00001" summary="API initial commit.">
       <created>1644643957794</created>
@@ -56,7 +57,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644650494780</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Created CRUD for &quot;comments&quot;.">
+      <created>1644654077687</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644654077687</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,6 +84,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="API initial commit." />
     <MESSAGE value="Created CRUD for &quot;news&quot;." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created CRUD for &quot;news&quot;." />
+    <MESSAGE value="Created CRUD for &quot;comments&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created CRUD for &quot;comments&quot;." />
   </component>
 </project>

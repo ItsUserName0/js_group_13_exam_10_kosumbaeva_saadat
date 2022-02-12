@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-content fxLayout="row">
+    <img [src]="apiUrl + '/uploads/' + post.image" [alt]="'Photo of ' + post.title" fxFlex="20%" *ngIf="post.image"/>
+    <div fxFlex="80%">
+      <mat-card-title>{{ post.title }}</mat-card-title>
+      <div fxLayout="row">
+        <p fxFlex="40%" class="text-muted">{{ post.date }}</p>
+        <a fxFlex="40%" [routerLink]="['news', post.id]">Read Full Post &gt;&gt;</a>
+        <button fxFlex="20%" mat-raised-button (click)="onPostRemove()" [disabled]="isRemoving">
+          <span *ngIf="!isRemoving">Delete</span>
+          <mat-spinner *ngIf="isRemoving" [diameter]="30"></mat-spinner>
+        </button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

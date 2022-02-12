@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="header" fxLayout="row" fxLayoutAlign="space-between">
+    <h1>Posts</h1>
+    <a routerLink="/posts/new" mat-raised-button>Add new post</a>
+  </div>
+  <ng-container *ngIf="!isFetching">
+    <app-post *ngFor="let p of posts" [post]="p"></app-post>
+  </ng-container>
+  <mat-spinner *ngIf="isFetching"></mat-spinner>
+</div>
