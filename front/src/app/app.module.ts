@@ -18,6 +18,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FileInputComponent } from './ui/file-input/file-input.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { AuthorPipe } from './pipes/author.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     EditPostComponent,
     NewsComponent,
     PostComponent,
-    FileInputComponent
+    FileInputComponent,
+    AuthorPipe
   ],
   imports: [
     BrowserModule,

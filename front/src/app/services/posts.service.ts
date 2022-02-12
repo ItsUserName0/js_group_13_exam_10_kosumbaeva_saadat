@@ -4,7 +4,7 @@ import { map, Subject, tap } from 'rxjs';
 import { Post } from '../models/post.model';
 import { environment } from '../../environments/environment';
 import { News, NewsData } from '../models/news.model';
-import { Comment } from '../models/comment.model';
+import { Comment, CommentData } from '../models/comment.model';
 
 @Injectable({
   providedIn: 'root'
@@ -68,6 +68,10 @@ export class PostsService {
     });
 
     return this.http.post(environment.apiUrl + '/news', formData);
+  }
+
+  createComment(commentData: CommentData) {
+    return this.http.post(environment.apiUrl + `/comments`, commentData);
   }
 
   removePost(id: string) {

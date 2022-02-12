@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b19cd196-261b-467f-9f78-c2793ebbaeb1" name="Changes" comment="Created CRUD for &quot;comments&quot;.">
-      <change afterPath="$PROJECT_DIR$/api/db.sql" afterDir="false" />
+    <list default="true" id="b19cd196-261b-467f-9f78-c2793ebbaeb1" name="Changes" comment="Implemented creating of post.">
+      <change afterPath="$PROJECT_DIR$/front/src/app/pipes/author.pipe.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/models/comment.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/models/comment.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/pages/edit-post/edit-post.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/pages/edit-post/edit-post.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/pages/news/news-resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/pages/news/news-resolver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/pages/news/news.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/pages/news/news.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/pages/news/news.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/pages/news/news.component.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/pages/news/news.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/pages/news/news.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/services/posts.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/services/posts.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +34,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../messenger-general/api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../recipes" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/front/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front/src/app/pages/news" />
+      <recent name="$PROJECT_DIR$/front/src/app/pages/posts" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -41,7 +56,7 @@
       <workItem from="1644643615542" duration="125000" />
       <workItem from="1644643751322" duration="69000" />
       <workItem from="1644643835389" duration="89000" />
-      <workItem from="1644643929004" duration="10820000" />
+      <workItem from="1644643929004" duration="26171000" />
     </task>
     <task id="LOCAL-00001" summary="API initial commit.">
       <created>1644643957794</created>
@@ -64,7 +79,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644654077687</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implemented viewing and deleting posts and comments.">
+      <created>1644668460754</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1644668460754</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implemented creating of post.">
+      <created>1644669480722</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1644669480722</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,6 +114,10 @@
     <MESSAGE value="API initial commit." />
     <MESSAGE value="Created CRUD for &quot;news&quot;." />
     <MESSAGE value="Created CRUD for &quot;comments&quot;." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created CRUD for &quot;comments&quot;." />
+    <MESSAGE value="Created front basic structure." />
+    <MESSAGE value="implemented viewing and deleting posts and comments" />
+    <MESSAGE value="Implemented viewing and deleting posts and comments." />
+    <MESSAGE value="Implemented creating of post." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented creating of post." />
   </component>
 </project>

@@ -1,15 +1,36 @@
 <h1>{{ news.title }}</h1>
 <p class="text-muted">{{ news.date }}</p>
+<img [src]="apiUrl + '/uploads/' + news.image" [alt]="'Photo of ' + news.title" *ngIf="news.image"/>
 <p>{{ news.description }}</p>
 
 <h1>Comments</h1>
 <ng-container *ngIf="comments.length > 0; else emptyComments">
-  <mat-card *ngFor="let c of comments">
+  <mat-card *ngFor="let c of comments" class="comment-card">
     <mat-card-content fxLayout="row" fxLayoutAlign="space-between">
-      <p><strong>{{ c.author }}</strong> wrote: <span>{{ c.description }}</span></p>
+      <p><strong>{{ c.author | author }}</strong> wrote: <span>{{ c.description }}</span></p>
       <button mat-raised-button (click)="onCommentRemove(c.id)">Delete</button>
     </mat-card-content>
   </mat-card>
 </ng-container>
-<ng-template #emptyComments>There are no comments on this news</ng-template>
+<ng-template #emptyComments>
+  <p class="empty-comments">There are no comments on this news</p>
+</ng-template>
 
+<h1>Add comment</h1>
+<mat-card>
+  <mat-card-content>
+    <form fxLayout="column" #f=ngForm (ngSubmit)="createComment()">
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input name="author" matInput ngModel>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Comment</mat-label>
+        <input name="description" matInput required ngModel>
+      </mat-form-field>
+      <div fxLayout="row" fxLayoutAlign="flex-end">
+        <button type="submit" mat-raised-button color="primary">Add</button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
