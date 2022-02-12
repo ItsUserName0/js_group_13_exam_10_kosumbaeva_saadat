@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b19cd196-261b-467f-9f78-c2793ebbaeb1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api/.gitignore" afterDir="false" />
+    <list default="true" id="b19cd196-261b-467f-9f78-c2793ebbaeb1" name="Changes" comment="Created CRUD for &quot;news&quot;.">
+      <change afterPath="$PROJECT_DIR$/api/app/comments.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +25,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shop-js13/api" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -40,7 +40,23 @@
       <workItem from="1644643615542" duration="125000" />
       <workItem from="1644643751322" duration="69000" />
       <workItem from="1644643835389" duration="89000" />
+      <workItem from="1644643929004" duration="6299000" />
     </task>
+    <task id="LOCAL-00001" summary="API initial commit.">
+      <created>1644643957794</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1644643957794</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Created CRUD for &quot;news&quot;.">
+      <created>1644650494780</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1644650494780</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -56,5 +72,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="API initial commit." />
+    <MESSAGE value="Created CRUD for &quot;news&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created CRUD for &quot;news&quot;." />
   </component>
 </project>

@@ -56,13 +56,13 @@ router.post('/', upload.single('image'), async (req, res, next) => {
     if (req.file) {
       newsData.image = req.file.filename;
     }
-    let query = 'INSERT INTO news (title, description, image) VALUES (?, ?, ?)';
+    const query = 'INSERT INTO news (title, description, image) VALUES (?, ?, ?)';
     const [results] = await db.getConnection().execute(query, [
       newsData.title,
       newsData.description,
       newsData.image,
     ]);
-    res.send({message: `Created news with id ${results.insertId}`});
+    return res.send({message: `Created news with id ${results.insertId}`});
   } catch (e) {
     next(e);
   }

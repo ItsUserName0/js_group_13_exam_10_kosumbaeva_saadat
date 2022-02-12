@@ -1,6 +1,7 @@
 const express = require('express');
 const db = require('./mySqlDb');
 const news = require('./app/news');
+const comments = require('./app/comments');
 const app = express();
 
 const port = 8000;
@@ -8,6 +9,7 @@ const port = 8000;
 app.use(express.json());
 app.use(express.static('public'));
 app.use('/news', news);
+app.use('/comments', comments);
 
 const run = async () => {
   await db.init();
