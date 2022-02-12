@@ -26,10 +26,11 @@
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Comment</mat-label>
-        <input name="description" matInput required ngModel>
+        <input name="description" matInput required ngModel #description="ngModel">
+        <mat-hint *ngIf="description.touched && description.errors?.['required']">Enter your comment!</mat-hint>
       </mat-form-field>
       <div fxLayout="row" fxLayoutAlign="flex-end">
-        <button type="submit" mat-raised-button color="primary">Add</button>
+        <button type="submit" mat-raised-button color="primary" [disabled]="!description.value || f.invalid">Add</button>
       </div>
     </form>
   </mat-card-content>

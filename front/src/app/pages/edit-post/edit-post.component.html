@@ -4,18 +4,20 @@
     <form fxLayout="column" #f=ngForm (ngSubmit)="createPost()">
       <mat-form-field appearance="outline">
         <mat-label>Title</mat-label>
-        <input name="title" matInput required ngModel>
+        <input name="title" matInput required ngModel #title="ngModel">
+        <mat-hint *ngIf="title.touched && title.errors?.['required']">Enter the title!</mat-hint>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Content</mat-label>
-        <input name="description" matInput required ngModel>
+        <input name="description" matInput required ngModel #description="ngModel">
+        <mat-hint *ngIf="description.touched && description.errors?.['required']">Enter a content!</mat-hint>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Image</mat-label>
         <app-file-input name="image" ngModel></app-file-input>
       </mat-form-field>
       <div fxLayout="row" fxLayoutAlign="flex-end">
-        <button type="submit" mat-raised-button color="primary">Save</button>
+        <button type="submit" mat-raised-button color="primary" [disabled]="!title.value || !description.value || f.invalid">Save</button>
       </div>
     </form>
   </mat-card-content>
