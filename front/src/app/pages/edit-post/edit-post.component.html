@@ -1,18 +1,18 @@
 <h1>Add new post</h1>
 <mat-card>
   <mat-card-content>
-    <form fxLayout="column">
+    <form fxLayout="column" #f=ngForm (ngSubmit)="createPost()">
       <mat-form-field appearance="outline">
         <mat-label>Title</mat-label>
-        <input name="title" matInput required>
+        <input name="title" matInput required ngModel>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Content</mat-label>
-        <input name="description" matInput required>
+        <input name="description" matInput required ngModel>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Image</mat-label>
-        <app-file-input name="image"></app-file-input>
+        <app-file-input name="image" ngModel></app-file-input>
       </mat-form-field>
       <div fxLayout="row" fxLayoutAlign="flex-end">
         <button type="submit" mat-raised-button color="primary">Save</button>

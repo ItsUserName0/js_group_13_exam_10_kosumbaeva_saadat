@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { PostsService } from '../../services/posts.service';
+import { NewsData } from '../../models/news.model';
 
 @Component({
   selector: 'app-edit-post',
@@ -6,10 +9,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edit-post.component.sass']
 })
 export class EditPostComponent implements OnInit {
+  @ViewChild('f') form!: NgForm;
 
-  constructor() { }
+  constructor(private postsService: PostsService) {
+  }
 
   ngOnInit(): void {
   }
 
+  createPost() {
+    const postData: NewsData = this.form.value;
+    this.postsService.createPost(postData).subscribe(() => {
+      this.postsService.fetchPosts();
+    });
+  }
+
 }
+

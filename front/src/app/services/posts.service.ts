@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { map, Subject, tap } from 'rxjs';
 import { Post } from '../models/post.model';
 import { environment } from '../../environments/environment';
-import { News } from '../models/news.model';
+import { News, NewsData } from '../models/news.model';
 import { Comment } from '../models/comment.model';
 
 @Injectable({
@@ -56,6 +56,18 @@ export class PostsService {
     ).subscribe(result => {
       this.commentsChange.next(result);
     });
+  }
+
+  createPost(postData: NewsData) {
+    const formData = new FormData();
+
+    Object.keys(postData).forEach(key => {
+      if (postData[key] !== null) {
+        formData.append(key, postData[key]);
+      }
+    });
+
+    return this.http.post(environment.apiUrl + '/news', formData);
   }
 
   removePost(id: string) {
