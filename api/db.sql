@@ -1,4 +1,5 @@
 create schema kosumbaeva_saadat_ex_10 collate utf8_general_ci;
+
 use kosumbaeva_saadat_ex_10;
 
 create table news
@@ -24,17 +25,14 @@ create table comments
 );
 
 insert into kosumbaeva_saadat_ex_10.news (id, title, description, image, date)
-values  (1, 'title1', 'description2', 'OQ24ns6ik7bHOr8P8l-Qn.png', '2022-02-12 13:03:51'),
-        (2, 'title2', 'description2', '_mJEqDFRz8S13xnzq24ud.png', '2022-02-12 13:03:51'),
-        (3, 'title2', 'description2', 'fLGlAaO9hYbiQM-_nS9l1.png', '2022-02-12 13:09:15'),
-        (5, 'title3', 'description2', '6GfjVU0jVjTQdAWAQXtk0.png', '2022-02-12 13:13:43'),
-        (6, 'title3', 'description2', '8s3uQeg-xBXLvhppkOTbI.png', '2022-02-12 13:18:00');
+values  (14, 'Post1', 'Content1', 'CLXvXYTbkKIad5R49hHnG.jpg', '2022-02-12 19:47:13'),
+        (15, 'Post2', 'Content2', 'ehjbdTXyteiGUWP1DaOLK.jpg', '2022-02-12 19:47:52'),
+        (16, 'Post3', 'Content3', 'yz-VXaCsj7KvOdSEoI0NR.jpg', '2022-02-12 19:48:10');
 
 insert into kosumbaeva_saadat_ex_10.comments (id, news_id, author, description)
-values  (1, 1, 'author1', 'description1'),
-        (2, 1, null, 'description1'),
-        (3, 3, null, 'description1'),
-        (6, 3, null, 'description1'),
-        (7, 3, null, 'description1'),
-        (8, 3, null, 'description1');
+values  (14, 14, 'Author1', 'Comment1'),
+        (15, 14, 'Author2', 'Comment2'),
+        (16, 15, 'Author1', 'Comment1'),
+        (17, 15, null, 'Comment2'),
+        (18, 16, 'Author1', 'Comment1');
 
